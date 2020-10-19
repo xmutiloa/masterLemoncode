@@ -1,0 +1,36 @@
+$color-1: red;
+$color-2: blue;
+$color-3: green;
+
+div {margin-bottom: 20px;
+  > div{
+      color:#fff;
+      display: inline-block;
+      line-height: 100px;
+      height: 100px;
+      padding: 0 3px;
+    }
+}
+
+$color-list: 1 $color-1, 2 $color-2, 3 $color-3;
+
+@each $index, $color in $color-list{
+  .color-#{$index}{
+    @for $i from 1 through 4 {
+        $percentage: $i*10%;
+
+        .darken-#{$i} {
+          background-color: darken($color, $percentage);
+        }
+
+        .lighten-#{$i} {
+          background-color: lighten($color, $percentage);
+        }
+
+        .base{
+          background-color: $color;
+        }
+    }
+  }
+}
+

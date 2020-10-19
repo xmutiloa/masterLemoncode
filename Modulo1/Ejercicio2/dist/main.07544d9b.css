@@ -1,0 +1,45 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.secondary-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+  border: 1px solid #666;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.box.base-box {
+  background-color: blue;
+}
+.box.important-box {
+  background-color: #000066;
+}
+.box.warning-box {
+  background-color: #9999ff;
+}
+.box.shadow-box {
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+div {
+  display: block;
+  width: 150px;
+}
+div.box {
+  height: 80px;
+  line-height: 80px;
+}
+div.box.warning-box {
+  margin-bottom: 10px;
+}
+div.secondary-font {
+  margin: 15px 0;
+}
+
+/*# sourceMappingURL=/main.07544d9b.css.map */

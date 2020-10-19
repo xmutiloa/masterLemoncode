@@ -1,0 +1,15 @@
+@import "theme-b";
+ 
+div{
+  display:block;
+  width:150px;
+
+  &.box{
+    height: 80px;
+    line-height: 80px;
+    &.warning-box{margin-bottom: 10px}
+  }
+  &.secondary-font{
+    margin: 15px 0;
+  }
+}
