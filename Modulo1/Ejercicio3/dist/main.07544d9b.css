@@ -1,0 +1,35 @@
+:root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.flex-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: mediumaquamarine;
+}
+.flex-container .item {
+  padding: 1em;
+}
+.flex-container .item:hover {
+  background-color: #329b77;
+}
+
+@media only screen and (max-width: 30em) {
+  .flex-container {
+    flex-wrap: wrap;
+  }
+  .flex-container .item {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=/main.07544d9b.css.map */
