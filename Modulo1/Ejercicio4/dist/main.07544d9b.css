@@ -1,0 +1,44 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.card {
+  border: 1px solid #000;
+}
+.card img {
+  width: 100%;
+}
+.card .title, .card .text, .card .data-card {
+  padding: 0 15px;
+}
+.card .data-card {
+  display: flex;
+  justify-content: flex-end;
+}
+.card .data-card .published {
+  font-weight: bold;
+  padding-right: 5px;
+}
+.card .data-card .data {
+  color: seagreen;
+}
+.card .btn {
+  margin: 10px 15px;
+  width: calc(100% - 30px);
+  background-color: olive;
+  padding: 10px 0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 40em) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+}
+
+/*# sourceMappingURL=/main.07544d9b.css.map */
