@@ -1,18 +1,19 @@
 @import "mixins.scss";
 
-body{
+.theme-b{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    .secondary-font{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .box{
+        border:1px solid #666;
+        @include border-radius(10px);
+        &.base-box{background-color: blue;}
+        &.important-box{background-color: darken(blue,30%);}
+        &.warning-box{background-color: lighten(blue,30%);}
+        &.shadow-box{@include box-shadow(10px, 10px, 10px, rgba(0, 0, 0, 0.6));}
+    }
 }
 
-.secondary-font{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.box{
-    border:1px solid #666;
-    @include border-radius(10px);
-    &.base-box{background-color: blue;}
-    &.important-box{background-color: darken(blue,30%);}
-    &.warning-box{background-color: lighten(blue,30%);}
-    &.shadow-box{@include box-shadow(10px, 10px, 10px, rgba(0, 0, 0, 0.6));}
-}

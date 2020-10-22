@@ -1,44 +1,73 @@
-body {
+.theme-a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.theme-a .secondary-font {
+  font-family: "Times New Roman", Times, serif;
+}
+.theme-a .box {
+  border: 1px solid #666;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.theme-a .box.base-box {
+  background-color: red;
+}
+.theme-a .box.important-box {
+  background-color: #660000;
+}
+.theme-a .box.warning-box {
+  background-color: #ff9999;
+}
+.theme-a .box.shadow-box {
+  -webkit-box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+.theme-b {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-
-.secondary-font {
+.theme-b .secondary-font {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-.box {
+.theme-b .box {
   border: 1px solid #666;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 }
-.box.base-box {
+.theme-b .box.base-box {
   background-color: blue;
 }
-.box.important-box {
+.theme-b .box.important-box {
   background-color: #000066;
 }
-.box.warning-box {
+.theme-b .box.warning-box {
   background-color: #9999ff;
 }
-.box.shadow-box {
+.theme-b .box.shadow-box {
   -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
 }
 
-div {
+.themes {
+  display: flex;
+  justify-content: space-around;
+}
+.themes div {
   display: block;
   width: 150px;
 }
-div.box {
+.themes div.box {
   height: 80px;
   line-height: 80px;
 }
-div.box.warning-box {
+.themes div.box.warning-box {
   margin-bottom: 10px;
 }
-div.secondary-font {
+.themes div.secondary-font {
   margin: 15px 0;
 }
 
